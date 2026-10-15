@@ -5,7 +5,7 @@
 **Frontend Developer** based in Lima, Peru 🇵🇪 — I build web products for the fintech and banking sector with **Angular** and **TypeScript**, and I'm expanding into **React / Next.js**.
 
 - 💼 Frontend Developer at **Sip** (fintech)
-- 🔭 Currently building **LVL**, a gamer-themed digital wallet (Angular 22 + Spring Boot 4)
+- 🎯 Focused on accessible, well-tested UIs (WCAG 2.2 AA, unit and e2e testing)
 - ⚓ Former marine engineer who switched careers into software
 - 🌎 Open to remote opportunities · 🗣️ Spanish (native) · English (C2)
 
