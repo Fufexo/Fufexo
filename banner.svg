@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300" width="1200" height="300" role="img" aria-labelledby="t d">
+  <title id="t">Fabrizio Fournier — Frontend Developer</title>
+  <desc id="d">Dark neon banner: Frontend Developer, Angular, TypeScript, Fintech, Lima, Peru.</desc>
+  <style>
+    .mono { font-family: 'Cascadia Code', 'SF Mono', Consolas, 'Courier New', monospace; }
+    .sans { font-family: 'Segoe UI', 'SF Pro Display', 'Helvetica Neue', Arial, sans-serif; }
+    .cursor { animation: blink 1.1s steps(1) infinite; }
+    .sign { animation: flicker 6s linear infinite; }
+    .grid { animation: pulse 4s ease-in-out infinite; }
+    .scan { animation: scan 7s linear infinite; }
+    @keyframes blink { 50% { opacity: 0; } }
+    @keyframes flicker { 0%, 90%, 93%, 96%, 100% { opacity: 1; } 91.5%, 94.5% { opacity: .35; } }
+    @keyframes pulse { 0%, 100% { opacity: .55; } 50% { opacity: .9; } }
+    @keyframes scan { from { transform: translateY(-40px); } to { transform: translateY(340px); } }
+    @media (prefers-reduced-motion: reduce) { .cursor, .sign, .grid, .scan { animation: none; } }
+  </style>
+
+  <defs>
+    <clipPath id="frame"><rect width="1200" height="300" rx="18"/></clipPath>
+    <radialGradient id="glowMag" cx="12%" cy="100%" r="60%">
+      <stop offset="0" stop-color="#ff2bd6" stop-opacity=".35"/>
+      <stop offset="1" stop-color="#ff2bd6" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowCyan" cx="88%" cy="0%" r="55%">
+      <stop offset="0" stop-color="#00e5ff" stop-opacity=".28"/>
+      <stop offset="1" stop-color="#00e5ff" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="gridFade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fff" stop-opacity="0"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="1"/>
+    </linearGradient>
+    <mask id="gridMask"><rect x="0" y="228" width="1200" height="72" fill="url(#gridFade)"/></mask>
+    <linearGradient id="scanGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#00e5ff" stop-opacity="0"/>
+      <stop offset=".5" stop-color="#00e5ff" stop-opacity=".07"/>
+      <stop offset="1" stop-color="#00e5ff" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="glowSoft" x="-10%" y="-40%" width="120%" height="180%">
+      <feGaussianBlur stdDeviation="5" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="glowName" x="-5%" y="-30%" width="110%" height="160%">
+      <feGaussianBlur stdDeviation="3" result="b"/>
+      <feColorMatrix in="b" type="matrix" values="0 0 0 0 0  0 0 0 0 .9  0 0 0 0 1  0 0 0 .55 0" result="c"/>
+      <feMerge><feMergeNode in="c"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="glowStrong" x="-20%" y="-40%" width="140%" height="180%">
+      <feGaussianBlur stdDeviation="9" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <g clip-path="url(#frame)">
+    <!-- background -->
+    <rect width="1200" height="300" fill="#0a0a14"/>
+    <rect width="1200" height="300" fill="url(#glowMag)"/>
+    <rect width="1200" height="300" fill="url(#glowCyan)"/>
+
+    <!-- perspective grid -->
+    <g class="grid" mask="url(#gridMask)" stroke="#ff2bd6" stroke-width="1.2" fill="none">
+      <line x1="0" y1="228" x2="1200" y2="228" stroke="#ff2bd6" stroke-opacity=".9"/>
+      <line x1="0" y1="230.9" x2="1200" y2="230.9"/>
+      <line x1="0" y1="234.5" x2="1200" y2="234.5"/>
+      <line x1="0" y1="239.5" x2="1200" y2="239.5"/>
+      <line x1="0" y1="246" x2="1200" y2="246"/>
+      <line x1="0" y1="253.9" x2="1200" y2="253.9"/>
+      <line x1="0" y1="263.3" x2="1200" y2="263.3"/>
+      <line x1="0" y1="274.1" x2="1200" y2="274.1"/>
+      <line x1="0" y1="286.3" x2="1200" y2="286.3"/>
+      <line x1="0" y1="299.5" x2="1200" y2="299.5"/>
+      <g stroke-opacity=".8">
+        <line x1="600" y1="228" x2="-900" y2="300"/>
+        <line x1="600" y1="228" x2="-600" y2="300"/>
+        <line x1="600" y1="228" x2="-300" y2="300"/>
+        <line x1="600" y1="228" x2="0" y2="300"/>
+        <line x1="600" y1="228" x2="200" y2="300"/>
+        <line x1="600" y1="228" x2="400" y2="300"/>
+        <line x1="600" y1="228" x2="600" y2="300"/>
+        <line x1="600" y1="228" x2="800" y2="300"/>
+        <line x1="600" y1="228" x2="1000" y2="300"/>
+        <line x1="600" y1="228" x2="1200" y2="300"/>
+        <line x1="600" y1="228" x2="1500" y2="300"/>
+        <line x1="600" y1="228" x2="1800" y2="300"/>
+        <line x1="600" y1="228" x2="2100" y2="300"/>
+      </g>
+    </g>
+
+    <!-- slow scanline -->
+    <rect class="scan" x="0" y="0" width="1200" height="40" fill="url(#scanGrad)"/>
+
+    <!-- text block -->
+    <text x="80" y="92" class="mono" font-size="19" fill="#00e5ff" filter="url(#glowSoft)" letter-spacing="1">&gt; frontend_developer<tspan class="cursor">▍</tspan></text>
+    <text x="78" y="156" class="sans" font-size="62" font-weight="800" fill="#ffffff" letter-spacing="1.5" filter="url(#glowName)">Fabrizio Fournier</text>
+    <text x="80" y="197" class="sans" font-size="21" fill="#b9bdd6" letter-spacing=".5">Angular <tspan fill="#ff2bd6">·</tspan> TypeScript <tspan fill="#ff2bd6">·</tspan> Fintech <tspan fill="#ff2bd6">·</tspan> Lima, Peru</text>
+
+    <!-- neon sign -->
+    <g class="sign" filter="url(#glowStrong)">
+      <text x="1035" y="168" text-anchor="middle" class="mono" font-size="112" font-weight="700" fill="none" stroke="#ff2bd6" stroke-width="3.2">&lt;/&gt;</text>
+    </g>
+
+    <!-- inner border -->
+    <rect x="1" y="1" width="1198" height="298" rx="17" fill="none" stroke="#00e5ff" stroke-opacity=".25" stroke-width="2"/>
+  </g>
+</svg>
